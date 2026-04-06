@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #ff512f, #f09819);
+  color: white;
+  padding: 15px;
+}
+
+#foods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  height: 120px;
+  border-radius: 10px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  padding: 8px;
+  border: none;
+  background: #ff512f;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#cart {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  padding: 10px;
+  overflow-y: auto;
+  box-shadow: -5px 0 10px rgba(0,0,0,0.3);
+}
+
+.hide {
+  display: none;
+}

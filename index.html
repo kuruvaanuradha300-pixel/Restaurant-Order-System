@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <h1>🍔 Foodie Hub</h1>
+  <button onclick="openCart()">Order (<span id="count">0</span>)</button>
+</nav>
+
+<div id="foods"></div>
+
+<div id="cart" class="hide">
+  <h2>Your Order</h2>
+  <button onclick="closeCart()">Close</button>
+  <div id="cartItems"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
